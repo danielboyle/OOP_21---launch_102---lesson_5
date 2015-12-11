@@ -98,7 +98,7 @@ module Hand
       total -= 10
     end
 
-    total 
+    total
   end
 
   def add_card(new_card)
@@ -227,7 +227,7 @@ class TwentyOne
       puts "It looks like #{player.name} busted! #{dealer.name} wins!"
     elsif dealer.busted?
       puts "It looks like #{dealer.name} busted! #{player.name} wins!"
-    end 
+    end
   end
 
   def show_cards
