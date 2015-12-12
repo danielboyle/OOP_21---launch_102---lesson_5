@@ -218,6 +218,7 @@ class TwentyOne
       else
         puts "#{dealer.name} hits!"
         dealer.add_card(deck.deal_one)
+        dealer.show_hand
       end
     end
   end
@@ -294,7 +295,7 @@ class TwentyOne
       end
 
       dealer_turn
-      if player.busted?
+      if dealer.busted?
         show_busted
         if play_again?
           reset
